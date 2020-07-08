@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Blackjack Game - Using Node.js</title>
+</head>
+<body>
+    <center>
+        <h1>Blackjack Project - Yoni Yegorov</h1>
+    </center>
+
+    <button type = "submit" id="resetBtnID">Reset Game</button>
+    <button type = "submit" id="hitBtnID">Hit</button>
+    <button type = "submit" id="standBtnID">Stand</button>
+    <h3 class="clientScore">Player Score</h3>
+
+    <h1>Client Deck</h1>
+    <div class = "clientDeck">
+
+    </div>
+
+    <h1>Server Deck</h1>
+    <div class = "serverDeck">
+
+    </div>
+
+</body>
+<script src= "/socket.io/socket.io.js"></script>
+<script src="../Client.js"></script>
+</html>
