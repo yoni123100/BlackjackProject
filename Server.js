@@ -64,11 +64,11 @@ function startUpServer() {
                 serverDeck.push(deck.pop(0));
                 serverDeck.push(deck.pop(0));
 
-                socket.emit("serverAndDeckObjects", {Deck: JSON.stringify(deck), serverDeck: JSON.stringify(serverDeck)});
+                socket.emit("serverAndDeckObjects", {Deck: JSON.stringify(deck), serverDeck: JSON.stringify(serverDeck), GameOver: false});
             }
         });
 
-        socket.emit("serverAndDeckObjects", {Deck: JSON.stringify(deck), serverDeck: JSON.stringify(serverDeck)});
+        socket.emit("serverAndDeckObjects", {Deck: JSON.stringify(deck), serverDeck: JSON.stringify(serverDeck), GameOver: false});
     });
 }
 
